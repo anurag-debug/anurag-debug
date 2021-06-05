@@ -1,0 +1,49 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?c219571d5146d6ec7a55397ec767ea21") format("truetype"),
+url("./flaticon.woff?c219571d5146d6ec7a55397ec767ea21") format("woff"),
+url("./flaticon.woff2?c219571d5146d6ec7a55397ec767ea21") format("woff2"),
+url("./flaticon.eot?c219571d5146d6ec7a55397ec767ea21#iefix") format("embedded-opentype"),
+url("./flaticon.svg?c219571d5146d6ec7a55397ec767ea21#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "web-maintenance": "\f101",
+    "computer": "\f102",
+    "bullhorn": "\f103",
+    "content": "\f104",
+    "gear": "\f105",
+    "brand": "\f106",
+);
+
+.flaticon-web-maintenance:before {
+    content: map-get($flaticon-map, "web-maintenance");
+}
+.flaticon-computer:before {
+    content: map-get($flaticon-map, "computer");
+}
+.flaticon-bullhorn:before {
+    content: map-get($flaticon-map, "bullhorn");
+}
+.flaticon-content:before {
+    content: map-get($flaticon-map, "content");
+}
+.flaticon-gear:before {
+    content: map-get($flaticon-map, "gear");
+}
+.flaticon-brand:before {
+    content: map-get($flaticon-map, "brand");
+}

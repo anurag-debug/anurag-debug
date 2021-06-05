@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="website2.css"/> -->
+    <link rel="stylesheet" href="all.css"/>
+    <!-- <link rel="stylesheet" href="website2.css"/> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media= "screen and (max-width: 1200px)" href="phone.css"/>
+    <title>Login</title>
+</head>
+<style>
+*{
+      /* margin: 0;
+      padding: 0; */
+      /* border: none; */
+      list-style: none;
+      text-decoration: none;
+    /* align-items: center;
+    outline: none;
+    transition: all .4s ease-out 0s; */
+
+  }
+  input:focus,input:active,textarea:focus,textarea:active{
+    border-bottom: 1px solid rgba(0, 45, 91, 1);
+    
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+  max-lines: 1;
+}
+
+  header{ 
+      display: flex;
+      flex-direction: column;
+  }
+  .header{ 
+    font-family: 'Montserrat', sans-serif;
+      display: flex;
+    color: white;
+    font-size: 1rem;
+    justify-content: space-between;
+   box-sizing: border-box;
+    background-color: rgb(0, 45, 91);
+    flex-direction: row;
+    list-style: none;
+      width: 100%;
+      height: 50px;
+}
+.sociamedia ul{ 
+            display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   box-sizing: border-box;
+        }
+#add{ 
+  
+    visibility: visible;
+  
+    padding-left: 60px;
+}
+   #social ul{ 
+        margin-right: 50px;
+    }
+    #social ul a li {   
+      padding-inline: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    #social ul a li i{  
+
+        transition: all .5s ease-out 0s;
+        
+    }
+    #social ul a li:hover i {
+         transform: rotateY(180deg); 
+                 color: #ff656a;
+    }
+    #add1{  
+       padding-left: 30px;
+    }
+    #symbol p{
+      font-family: "Montserrat", sans-serif,
+       sans-serif;  color: #ff656a; 
+       font-size: 20px;
+       font-weight: bolder;
+    }
+    .socialmedia ul{ 
+        display: flex;
+       overflow: auto;
+       height: 50px;
+       white-space: nowrap;
+    }
+    #symbol img{
+      padding-left: 40px;
+
+    }
+    #firstline{
+      font-size: 70px;
+    font-weight: 900;
+    color: #002d5b;
+    font-family: 'Poppins',sans-serif;
+    }
+    #firstlineintro{color: #ff656a; font-size: 19px; }
+
+    .footer{ 
+    display: flex;
+   
+    color: white;
+    font-size: 1rem;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    height: 85px;  
+    }
+    #tabs ul{
+        display: flex;
+        flex-direction: row;
+        padding-right: 60px;
+    }
+    #tabs ul a{  
+        font-size: 16px;
+        color: rgb(0, 45, 91);
+        font-family: 'Ubuntu', sans-serif;
+        padding-inline:20px;
+        font-weight: bolder;
+    }
+    #tabs #contact{
+      padding-right: 20px;
+    }
+    .menu{
+      display: none;
+    }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dedada;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  /* #wrapper1{
+    backdrop-filter: blur(5px);
+height: 100%;
+  } */
+
+  .search-icon { 
+    width: 18px;
+  }
+  .search { 
+    font-family: 'Montserrat', sans-serif;
+    height: 15px;
+    width: 220px;
+padding: 5px;
+    outline: 0;
+    background-color: white;
+  }
+  #tabs ul a li:hover,  #tabs ul a:focus,#tabs ul a:active { 
+    color: #ff656a;
+  }
+#symbol{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  #firstimage{ 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    overflow: hidden;
+  }
+.delbtn{
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  padding: 2px;
+  margin-top: 25px;
+    border-radius: 50%;
+    margin-bottom: 14px
+    
+  }
+  #delbtn{
+    display: flex;
+    flex-direction: column;
+    
+  
+  }
+</style>
+<body>
+    <header>
+
+        <div class="header">
+            <div id="add" class="socialmedia">
+                <ul style="font-size: 13px;">
+                    <li id="locaton">
+                        <i class="fa fa-phone mr-1" style="padding-inline: 5px;"></i>
+                        +91 9608005200
+                    </li>
+                    <li id="add1">
+                        <i class="fa fa-paper-plane mr-1" style="padding-inline: 5px;"></i>                        
+                        info@digipplus.com
+                    </li>
+                </ul>
+                
+            </div>
+            <div id="social" class="socialmedia">
+                <ul>
+                    
+                    <a href="https://facebook.com">
+                        <li><i class="fab fa-facebook"> </i></li>
+                    </a>
+
+                    <a href="">
+                        <li ><i class="fab fa-twitter"> </i></li>
+                    </a>
+
+                    <a href="">
+                        <li ><i class="fab fa-instagram"> </i></li>
+                        </a>
+
+                    <a href="">
+                         <li ><i class="fab fa-linkedin"> </i></li>
+                    </a>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+        </header>
+            <div class="footer" id="ftr">
+                <div id="symbol">
+                    
+                    <img src="https://digipplus.com/img/logos/digipplus-icon-70x70.png" alt="LOGO">
+                    
+                    <p>DIGIPPLUS</p>
+                </div>
+                <div id="tabs">
+                    <ul>
+                        <a href="index.html">
+                            <li>HOME</li>
+                        </a>
+                        <!-- <a href="website2pagecontact.html">
+                            <li>BLOG</li>
+                        </a> -->
+                        <a href="website2pageabout.html">
+                            <li>ABOUT</li>
+                        </a>
+                        <a href="website2pageservices.html">
+                            <li>SERVICES</li>
+                        </a>
+                        <a href="website2pagecareer.html">
+                            <li>CAREER</li>
+                        </a>
+                        <a href="website2pagecontact.html">
+                            <li id="contact">CONTACT</li>
+                        </a>
+                        
+                    </ul>
+                </div>
+                <div class="menu"><i class="fas fa-bars"></i>
+                </div>
+            </div>
+    <div id="read" style="font-size: 12px; margin-top: 50px; display: flex;justify-content: space-evenly;  font-family: Montserrat, Arial, sans-serif;">
+        
+        <hr>
+        <div id="serialnumber"><p style="font-weight: bolder;">S NO.<br><br><br></p></div>
+        <hr>
+        <div id="readname"><p style="font-weight: bolder;">NAME<br><br><br></p></div>
+<hr>
+        <div id="reademail"><P style="font-weight: bolder;">E-MAIL<br><br><br></P></div>
+<hr>
+        <div id="readnumber"><P style="font-weight: bolder;">P NO.<br><br><br></P></div>
+<hr>
+        <div id="college"><P style="font-weight: bolder;">CLG NAME<br><br><br></P></div>
+<hr>
+        <div id="semester"><P style="font-weight: bolder;">SEME<br><br><br></P></div>
+<hr>
+        <div id="typeofinternship"><P style="font-weight: bolder;">INTERN TYPE<br><br><br></P></div>
+<hr>
+        <div id="service"><P style="font-weight: bolder;">SERVICE<br><br><br></P></div>
+        <hr>
+        <div id="profession"><p style="font-weight: bolder;">PROFESSION<br><br><br></p>
+        </div>
+    <hr>
+    <div><p style="font-weight: bolder;">DEL</p><div id="delbtn"></div></div>
+    <hr>
+</div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
